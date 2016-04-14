@@ -14,6 +14,7 @@ def multiply(a,b)
 end
 
 def divide(a,b)
+  a / b
   # put your code here
 end
 
@@ -32,9 +33,12 @@ b = gets.chomp
 if operation == "+"
   puts add(a,b)
 elsif operation == "-"
-  subtract
+  puts subtract(a,b)
 elsif operation == "*"
   multiply
+  puts multiply(a,b)
 end
 
 puts "The result is: #{}"
+
+# Demo of pull requests
