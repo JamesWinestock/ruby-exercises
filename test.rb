@@ -79,3 +79,5 @@
 # # customers = CSV.foreach('customers.csv', headers:true) do |row|
 #   customers.delete(0) # For each row, give me the cell that is under the 'Name' column
 # end
+
+# This is my change
