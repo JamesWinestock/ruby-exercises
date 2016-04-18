@@ -40,7 +40,7 @@ users=[]
 data = data.split("\n")
 data.each do |user|
   details = user.split(",")
-  users << User.new(details[0].strip, details[1].strip, details[3].strip)
+  users << User.new(details[0].strip, details[1].strip, details[2].strip)
 end
 
 puts "What is your login email?"
@@ -51,7 +51,7 @@ user_exists = false
 user = nil
 users.each do |u|
   user_email = u.get_email
-  if user_email == input_email
+  if user_email == login_email
     user = u
     user_exists = true
   end
