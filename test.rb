@@ -82,6 +82,7 @@
 
 filename = 'login.csv'
 open(filename, 'r').each do |line|
+  line = line.split(",")
   puts line
 end
 
