@@ -80,4 +80,9 @@
 #   customers.delete(0) # For each row, give me the cell that is under the 'Name' column
 # end
 
+filename = 'login.csv'
+open(filename, 'r').each do |line|
+  puts line
+end
+
 # This is my change
