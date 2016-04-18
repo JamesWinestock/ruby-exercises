@@ -59,7 +59,6 @@ end
       f.write(table.to_csv)
     end
 
-
   end
 
 
