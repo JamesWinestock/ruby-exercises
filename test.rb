@@ -118,9 +118,25 @@
 
 
 # array = ["You","are","a","hippopotamus"]
-# 
-# puts array.sample(2)
+#
+# # puts array.sample(2)
+# block = (5..13)
+# puts block.inject {|x,y| x * y}
+#
+#
+# def calculate(a,b)
+#   yield(a,b)
+# end
+#
+# puts calculate(43,37) {|a,b| a + b}
 
+def split_each_letter_then_join
+  puts "what is the string you want to split?"
+  string = gets.chomp
+  string.split(//)
+end
+
+puts split_each_letter_then_join
 
 
 
