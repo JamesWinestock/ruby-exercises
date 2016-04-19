@@ -100,15 +100,28 @@
 # puts array
 #
 
-def find_frequency(sentence, word)
-  sentence.downcase.split.count(word)
-end
+# def find_frequency(sentence, word)
+#   sentence.downcase.split.count(word)
+# end
+#
+# puts "What sentence would you like to use?"
+# sentence = gets.chomp#"The day is hot, the Capulets abroad and if we meet we will not escape a brawl. For now these hot days is the mad blood stirring."
+# puts "What word in the sentence would you like to calcalute the frequency of?"
+# word = gets.chomp
+#
+# puts find_frequency(sentence, word)
 
-puts "What sentence would you like to use?"
-sentence = gets.chomp#"The day is hot, the Capulets abroad and if we meet we will not escape a brawl. For now these hot days is the mad blood stirring."
-puts "What word in the sentence would you like to calcalute the frequency of?"
-word = gets.chomp
 
-puts find_frequency(sentence, word)
+# string = "I am a string to be sorted"
+#
+# puts string.split.sort_by{|x| x.length}.join(' ')
+
+
+# array = ["You","are","a","hippopotamus"]
+# 
+# puts array.sample(2)
+
+
+
 
 # This is my change
