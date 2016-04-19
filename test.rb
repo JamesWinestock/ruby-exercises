@@ -72,18 +72,43 @@
 # CSV.open('customers.csv', 'a') do |csv|
 #   csv << ["1"]
 #   csv << ["2"]
-#   csv.delete(1)
-# end
+# #   csv.delete(1)
+# # end
+# #
+# #
+# # # customers = CSV.foreach('customers.csv', headers:true) do |row|
+# #   customers.delete(0) # For each row, give me the cell that is under the 'Name' column
+# # end
 #
+# filename = 'login.csv'
+# open(filename, 'r').each do |line|
+#   line = line.split(",")
+# #   puts line
+# # end
 #
-# # customers = CSV.foreach('customers.csv', headers:true) do |row|
-#   customers.delete(0) # For each row, give me the cell that is under the 'Name' column
+# array = []
+# array << [1,2,3]
+# array.each do |i|
+#   i * 10
 # end
+# puts array
 
-filename = 'login.csv'
-open(filename, 'r').each do |line|
-  line = line.split(",")
-  puts line
+# # puts "I Am The Reaper".upcase.split"")
+#
+# array = [1,2,3,4,5]
+# array.map! { |i| i * 57 }
+# puts array
+#
+
+def find_frequency(sentence, word)
+  sentence.downcase.split.count(word)
 end
+
+puts "What sentence would you like to use?"
+sentence = gets.chomp#"The day is hot, the Capulets abroad and if we meet we will not escape a brawl. For now these hot days is the mad blood stirring."
+puts "What word in the sentence would you like to calcalute the frequency of?"
+word = gets.chomp
+
+puts find_frequency(sentence, word)
 
 # This is my change
