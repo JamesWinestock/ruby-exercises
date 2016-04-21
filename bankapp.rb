@@ -104,7 +104,6 @@ end
           customer_email = gets.chomp
           draw_lines
 
-
           new_customer = Customer.new({
             'name' => customer_name,
             'address' => customer_address,
