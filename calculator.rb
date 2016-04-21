@@ -28,13 +28,13 @@ print "Enter second number: "
 b = gets.chomp.to_i
 
 if operation == "+"
-  puts add(a,b)
+  puts "The answer is #{add(a,b)}"
 elsif operation == "-"
-  puts subtract(a,b)
+  puts "The answer is #{subtract(a,b)}"
 elsif operation == "*"
-  puts multiply(a,b)
+  puts "The answer is #{multiply(a,b)}"
 elsif operation == "/"
-  puts divide(a,b)
+  puts "The answer is #{divide(a,b)}"
 else
   puts "What?"
 end
